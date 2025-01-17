@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  background: lightgray;
+}
+
+nav {
+  /* background: gray; */
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+button {
+  margin: 60px 15px;
+  padding: 18px 40px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: 0;
+  background: whitesmoke;
+  color: #111;
+}
+
+.logo {
+  text-align: center;
+  margin: 30px;
+  img {
+    width: 200px;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: aqua;
+}
+.container img {
+  max-width: 100%;
+}
+
+.line-container{
+  position: relative;
+  top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  background-color: red;
+  height: 5px;
+  width: 80px;
+  /* right: -93%; */
+  top: 20px;
+}
+.card {
+}
