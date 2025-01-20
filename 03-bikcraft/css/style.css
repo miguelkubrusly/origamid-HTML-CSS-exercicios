@@ -22,7 +22,7 @@ img {
 }
 
 h2 {
-  font-size: 1.5rem
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -36,6 +36,11 @@ a {
   border-radius: 0.16rem;
   font-size: 0.8rem;
   cursor: pointer;
+  transition: filter 0.1s ease;
+}
+
+a:hover {
+  filter: brightness(0.8);
 }
 
 p {
@@ -67,6 +72,11 @@ nav ul {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+}
+
+nav a:hover{
+  filter: brightness(1);
+  border: rgb(255, 30, 0) solid .14rem
 }
 
 main {
@@ -103,7 +113,6 @@ footer {
   content: "";
   width: 3rem;
   height: 0.16rem;
-  display: inline-block;
   position: absolute;
   top: 1.8rem;
   right: -1.5rem;
@@ -111,18 +120,21 @@ footer {
 }
 
 #vantagens-bikcraft {
+  background-image: url("/03-bikcraft/img/onda.svg");
+  background-size: auto;
+  background-repeat: repeat;
+  background-position-x: 0;
   font-size: 3.25rem;
   color: rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
   display: grid;
   align-self: center;
   text-align: end;
-  margin: 2rem;
+  padding: 2rem;
 }
 
 #vantagens {
   display: grid;
-  /* gap: 2rem; */
   align-content: center;
   background-color: white;
   padding: 1.27rem;
@@ -131,10 +143,26 @@ footer {
 .vantagem {
   display: grid;
   gap: 0.5rem 1rem;
+  position: relative;
   grid-template-columns: auto 1fr;
   margin: 0.68rem 2.5rem;
+  padding: 0.5rem;
 }
 
 .vantagem p {
   grid-column: 2;
+}
+
+.vantagem:nth-child(2n + 1) {
+  background-color: #f7f7f7;
+  border-radius: 0.16rem;
+}
+
+.vantagem:hover::before{
+  display: inline-block;
+  content: "";
+  background-color: rgb(255, 30, 0);
+  width: .2rem;
+  height: 100%;
+  position: absolute;
 }
