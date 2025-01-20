@@ -1,13 +1,33 @@
-body {
+a,p,h1,h2,h3, ul, li{
+  padding: 0;
   margin: 0;
-  background: #f7f7f7;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+body {
   font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+  margin-top: 60px;
 }
 
-nav {
+main {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-button {
+nav ul {
+  display: flex;
+}
+
+img {
+  max-width: 100%;
 }
 
 p {
@@ -16,6 +36,5 @@ p {
 
 a {
 }
-
 footer {
 }
