@@ -74,9 +74,13 @@ nav ul {
   justify-content: center;
 }
 
-nav a:hover{
+nav a {
+  border: 0.14rem solid transparent;
+}
+
+nav a:hover {
   filter: brightness(1);
-  border: rgb(255, 30, 0) solid .14rem
+  border: rgb(255, 30, 0) solid 0.14rem;
 }
 
 main {
@@ -158,11 +162,11 @@ footer {
   border-radius: 0.16rem;
 }
 
-.vantagem:hover::before{
+.vantagem:hover::before {
   display: inline-block;
   content: "";
   background-color: rgb(255, 30, 0);
-  width: .2rem;
+  width: 0.2rem;
   height: 100%;
   position: absolute;
 }
