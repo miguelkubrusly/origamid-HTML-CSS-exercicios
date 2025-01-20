@@ -22,15 +22,24 @@ img {
 }
 
 h2 {
-  font-size: calc(1rem+(8 * 1rem / 17)); /*golden proportion*/
+  font-size: 1.5rem
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 a {
   text-transform: uppercase;
-  padding: .8rem 1.6rem;
+  padding: 0.8rem 1.6rem;
   background-color: white;
-  border-radius: .16rem;
-  font-size: .8rem;
+  border-radius: 0.16rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+p {
+  line-height: 1.32rem;
 }
 
 body {
@@ -38,9 +47,9 @@ body {
   background: #f7f7f7;
   margin: 0;
   display: grid;
-  gap: 4rem;
+  gap: 3rem;
   justify-items: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 header {
@@ -49,18 +58,19 @@ header {
 }
 
 header img {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 nav ul {
   margin: 1rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
-  justify-items: center;
+  justify-content: center;
 }
 
 main {
-  max-width: 62rem;
+  max-width: 50rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -71,9 +81,14 @@ main a {
 }
 
 footer {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  padding: 2rem 0;
 }
 
 #introducao {
+  position: relative;
   display: grid;
   gap: 1rem;
   grid-template-columns: auto;
@@ -82,4 +97,44 @@ footer {
   padding: 2rem;
   background-color: white;
   text-align: right;
+}
+
+#introducao::after {
+  content: "";
+  width: 3rem;
+  height: 0.16rem;
+  display: inline-block;
+  position: absolute;
+  top: 1.8rem;
+  right: -1.5rem;
+  background-color: rgb(255, 30, 0);
+}
+
+#vantagens-bikcraft {
+  font-size: 3.25rem;
+  color: rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  display: grid;
+  align-self: center;
+  text-align: end;
+  margin: 2rem;
+}
+
+#vantagens {
+  display: grid;
+  /* gap: 2rem; */
+  align-content: center;
+  background-color: white;
+  padding: 1.27rem;
+}
+
+.vantagem {
+  display: grid;
+  gap: 0.5rem 1rem;
+  grid-template-columns: auto 1fr;
+  margin: 0.68rem 2.5rem;
+}
+
+.vantagem p {
+  grid-column: 2;
 }
