@@ -162,11 +162,15 @@ footer {
   border-radius: 0.16rem;
 }
 
-.vantagem:hover::before {
+.vantagem:hover{
+  border-left: .15rem solid rgb(255, 30, 0);
+}
+
+/* .vantagem:hover::before {
   display: inline-block;
   content: "";
   background-color: rgb(255, 30, 0);
   width: 0.2rem;
   height: 100%;
   position: absolute;
-}
+} */
