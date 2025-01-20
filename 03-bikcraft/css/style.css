@@ -1,4 +1,10 @@
-a,p,h1,h2,h3, ul, li{
+a,
+p,
+h1,
+h2,
+h3,
+ul,
+li {
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -6,35 +12,74 @@ a,p,h1,h2,h3, ul, li{
   color: black;
 }
 
+html {
+  font-size: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h2 {
+  font-size: calc(1rem+(8 * 1rem / 17)); /*golden proportion*/
+}
+
+a {
+  text-transform: uppercase;
+  padding: .8rem 1.6rem;
+  background-color: white;
+  border-radius: .16rem;
+  font-size: .8rem;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #f7f7f7;
   margin: 0;
   display: grid;
-  gap: 60px;
+  gap: 4rem;
   justify-items: center;
-  margin-top: 60px;
+  margin-top: 4rem;
+}
+
+header {
+  display: grid;
+  justify-items: center;
+}
+
+header img {
+  margin-bottom: 4rem;
+}
+
+nav ul {
+  margin: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-items: center;
 }
 
 main {
-  max-width: 1000px;
+  max-width: 62rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-nav ul {
-  display: flex;
+main a {
+  background-color: rgb(255, 30, 0);
+  color: #f7f7f7;
 }
 
-img {
-  max-width: 100%;
-}
-
-p {
-  font-size: 15px;
-}
-
-a {
-}
 footer {
+}
+
+#introducao {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto;
+  justify-items: right;
+  align-content: center;
+  padding: 2rem;
+  background-color: white;
+  text-align: right;
 }
